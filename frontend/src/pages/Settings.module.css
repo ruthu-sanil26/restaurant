@@ -1,0 +1,393 @@
+/* ═══════════════════════════════════════════
+   Settings.module.css
+   Premium dark-theme Settings styles
+═══════════════════════════════════════════ */
+
+/* ── Page Layout ── */
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  animation: fadeInPage 0.4s ease both;
+}
+
+@keyframes fadeInPage {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+/* ══════════════════════════════
+   Page Header
+══════════════════════════════ */
+.pageHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-color, rgba(255, 255, 255, 0.06));
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.pageTitle span {
+  color: var(--accent);
+}
+
+.pageSubtitle {
+  margin-top: 0.35rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* ══════════════════════════════
+   Form Card
+══════════════════════════════ */
+.formCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.formTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 240px;
+}
+
+.inputGroup input {
+  padding: 0.65rem 1rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inputGroup input::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.inputGroup input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(232, 184, 109, 0.1);
+}
+
+.formActions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  height: 42px; /* align with input fields */
+}
+
+.btn {
+  padding: 0.65rem 1.25rem;
+  background: var(--accent);
+  color: var(--bg-dark);
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--accent-hover, #f5d38c);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(232, 184, 109, 0.2);
+}
+
+.btnSecondary {
+  padding: 0.65rem 1.25rem;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.2));
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btnSecondary:hover {
+  color: var(--text);
+  background: var(--border-color-dim, rgba(255, 255, 255, 0.05));
+}
+
+/* ══════════════════════════════
+   Table Wrapper
+══════════════════════════════ */
+.tableWrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.07));
+  border-radius: var(--radius);
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table thead {
+  background: var(--border-color-dim, rgba(255, 255, 255, 0.03));
+  border-bottom: 1px solid var(--border-color, rgba(255, 255, 255, 0.07));
+}
+
+.table th {
+  padding: 0.9rem 1.1rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1px solid var(--border-color-dim, rgba(255, 255, 255, 0.045));
+  vertical-align: middle;
+}
+
+.row {
+  transition: background 0.15s;
+}
+
+.row:last-child td {
+  border-bottom: none;
+}
+
+.row:hover {
+  background: var(--border-color-dim, rgba(255, 255, 255, 0.025));
+}
+
+.catIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(232, 184, 109, 0.13);
+  color: var(--accent);
+  border: 1px solid rgba(232, 184, 109, 0.3);
+  font-weight: 700;
+  margin-right: 0.75rem;
+}
+
+.catName {
+  font-weight: 600;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+}
+
+.catDesc {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.smallBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.38rem 0.85rem;
+  background: rgba(232, 184, 109, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(232, 184, 109, 0.3);
+  border-radius: 8px;
+  font-size: 0.83rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.smallBtn:hover {
+  background: rgba(232, 184, 109, 0.2);
+  transform: translateY(-1px);
+}
+
+.smallBtnDanger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.38rem 0.85rem;
+  background: transparent;
+  border: 1px solid rgba(224, 125, 125, 0.3);
+  border-radius: 8px;
+  color: var(--error);
+  font-size: 0.83rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.smallBtnDanger:hover {
+  background: rgba(224, 125, 125, 0.12);
+  border-color: var(--error);
+  transform: translateY(-1px);
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 3.5rem 1rem;
+}
+
+.emptyState span {
+  font-size: 2.5rem;
+}
+
+.emptyState p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ══════════════════════════════
+   Delete Confirmation Modal
+══════════════════════════════ */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 8, 14, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5000;
+  padding: 1rem;
+  backdrop-filter: blur(6px);
+}
+
+.modal {
+  background: #ffffff;
+  border: 1px solid rgba(224, 125, 125, 0.25);
+  border-radius: 18px;
+  padding: 2.25rem 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--border-color-dim, rgba(255, 255, 255, 0.04));
+  animation: popIn 0.22s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.88) translateY(8px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0); }
+}
+
+.modalIcon {
+  font-size: 2.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.modalTitle {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--error);
+  margin-bottom: 0.6rem;
+}
+
+.modalDesc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+.modalDesc strong {
+  color: var(--text);
+}
+
+.modalActions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.modalCancel {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  background: var(--border-color-dim, rgba(255, 255, 255, 0.05));
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.12));
+  border-radius: 10px;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.modalCancel:hover {
+  background: var(--border-color, rgba(255, 255, 255, 0.1));
+  color: var(--text);
+}
+
+.modalConfirm {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  background: rgba(224, 125, 125, 0.15);
+  border: 1px solid rgba(224, 125, 125, 0.4);
+  border-radius: 10px;
+  color: var(--error);
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+.modalConfirm:hover {
+  background: rgba(224, 125, 125, 0.25);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(224, 125, 125, 0.2);
+}
+
+.modalConfirm:active {
+  transform: translateY(0);
+}

@@ -1,0 +1,97 @@
+/* Contact Page Container */
+.contactContainer {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 40px;
+}
+
+/* Contact Card */
+.contactCard {
+  width: 420px;
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Heading */
+.contactCard h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Subtitle */
+.contactCard p {
+  margin-bottom: 25px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Form */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+.contactInput {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Focus effect */
+.contactInput:focus {
+  border-color: #ff6b35;
+}
+
+/* Textarea */
+.contactTextarea {
+  padding: 12px;
+  height: 100px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  resize: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.contactTextarea:focus {
+  border-color: #ff6b35;
+}
+
+/* Button */
+.contactButton {
+  padding: 12px;
+  background-color: #ff6b35;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contactButton:hover {
+  background-color: #e85a2b;
+}
+
+/* Contact Info */
+.contactInfo {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #555;
+}
+
+.contactInfo p {
+  margin: 5px 0;
+}

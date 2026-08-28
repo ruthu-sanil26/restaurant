@@ -1,0 +1,203 @@
+.page {
+  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--text-main);
+}
+
+.title span {
+  color: var(--accent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-top: 3px solid var(--border-color, rgba(255, 255, 255, 0.1));
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.cardPending { border-top-color: var(--accent); }
+.cardConfirmed { border-top-color: var(--success); }
+.cardCancelled { border-top-color: var(--error); }
+.cardCompleted { border-top-color: #888; }
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.customerName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.customerContact {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badgePending { background: rgba(232, 184, 109, 0.15); color: var(--accent); }
+.badgeConfirmed { background: rgba(107, 207, 127, 0.15); color: var(--success); }
+.badgeCancelled { background: rgba(224, 125, 125, 0.15); color: var(--error); }
+.badgeCompleted { background: var(--border-color, rgba(255, 255, 255, 0.1)); color: #aaa; }
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.detailRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+.detailIcon {
+  color: var(--accent);
+}
+
+.notes {
+  font-size: 0.85rem;
+  color: #ccc;
+  font-style: italic;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-color-dim, rgba(255, 255, 255, 0.05));
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.btn {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btnConfirm {
+  background: rgba(107, 207, 127, 0.15);
+  color: var(--success);
+  border: 1px solid rgba(107, 207, 127, 0.3);
+}
+
+.btnConfirm:hover {
+  background: rgba(107, 207, 127, 0.25);
+}
+
+.btnCancel {
+  background: rgba(224, 125, 125, 0.15);
+  color: var(--error);
+  border: 1px solid rgba(224, 125, 125, 0.3);
+}
+
+.btnCancel:hover {
+  background: rgba(224, 125, 125, 0.25);
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 0.6rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
+  border-radius: 8px;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.tabActive {
+  background: rgba(232, 184, 109, 0.1);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.bookingCodeTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.4rem;
+  padding: 0.2rem 0.6rem;
+  background: rgba(232, 184, 109, 0.12);
+  border: 1px solid rgba(232, 184, 109, 0.35);
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+.tableNumberRow {
+  background: rgba(232, 184, 109, 0.08);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-top: 0.15rem;
+}

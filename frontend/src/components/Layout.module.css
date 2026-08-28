@@ -1,0 +1,191 @@
+.layout {
+  /* Scoped Admin Color Palette: Clean Light Theme */
+  --bg-dark: #f8fafc;           /* Light neutral page background */
+  --bg-card: #ffffff;           /* Crisp white for cards */
+  --bg-elevated: #f1f5f9;       /* Light neutral for inputs/surfaces */
+  --accent: #ff9800;            /* Warm orange accent */
+  --accent-dim: #e68a00;        /* Darker orange for hovers */
+  --text: #000000;              /* Slate dark text */
+  --text-muted: #64748b;        /* Muted slate text */
+  --success: #16a34a;           /* Fresh green */
+  --warning: #d97706;           /* Amber warning */
+  --error: #dc2626;             /* Red error */
+  
+  /* Borders and elements */
+  --border-color: #e2e8f0;      /* Light border */
+  --border-color-dim: #f1f5f9;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-dark);
+  color: var(--text);
+  font-family: var(--font-sans, 'DM Sans', sans-serif);
+}
+
+.sidebar {
+  /* Sidebar variables override */
+  --text: #000000;              /* Slate text */
+  --text-muted: #64748b;        /* Muted slate text */
+  --border-color: #e2e8f0;
+  --border-color-dim: #f1f5f9;
+  --bg-elevated: #f1f5f9;
+  --accent: #ff9800;
+
+  width: 260px;
+  background: #ffffff;          /* Clean white Sidebar */
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.04);
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0 1.5rem 2rem;
+  font-family: var(--font-display, 'Playfair Display', serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.5px;
+}
+
+.brandIcon {
+  font-size: 1.25rem;
+  color: var(--accent);
+  filter: drop-shadow(0 0 8px rgba(255, 152, 0, 0.3));
+}
+
+.bellWrap {
+  margin-left: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0 0.75rem;
+  flex: 1;
+}
+
+.nav a {
+  padding: 0.75rem 1rem;
+  color: var(--text-muted);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 550;
+  display: flex;
+  align-items: center;
+  border-left: 3px solid transparent;
+}
+
+.nav a:hover {
+  color: var(--accent);
+  background: rgba(255, 152, 0, 0.08);
+  transform: translateX(4px);
+}
+
+.navActive {
+  color: #ffffff !important;   /* White text on active accent pill */
+  background: var(--accent) !important;
+  font-weight: 700;
+  border-left-color: var(--accent) !important;
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.25);
+}
+
+.user {
+  margin: auto 0.75rem 0.75rem;
+  padding: 1.1rem;
+  background: var(--bg-elevated);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.user:hover {
+  border-color: rgba(255, 152, 0, 0.3);
+  background: #ffffff;
+}
+
+.userName {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.userRole {
+  font-size: 0.75rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.logoutBtn {
+  margin-top: 0.4rem;
+  padding: 0.55rem;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: var(--text);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoutBtn:hover {
+  background: #fee2e2;
+  color: #dc2626;
+  border-color: #fca5a5;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.15);
+  transform: translateY(-1px);
+}
+
+.main {
+  flex: 1;
+  padding: 2.5rem;
+  overflow: auto;
+  background: var(--bg-dark);
+}
+
+.aiFab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), #e2873a);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0 4px 24px rgba(242, 153, 74, 0.4);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aiFab:hover {
+  transform: scale(1.1) translateY(-4px);
+  box-shadow: 0 8px 32px rgba(242, 153, 74, 0.6);
+}

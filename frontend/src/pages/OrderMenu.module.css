@@ -1,0 +1,1290 @@
+.menuContainer {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #fff8f0, #ffe9d6);
+  text-align: center;
+}
+
+.menuTitle {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Increased min width */
+  gap: 25px;
+  max-width: 1200px;
+  /* Wider container */
+  margin: auto;
+}
+
+/* Menu card */
+.menuCard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 350px;
+  /* Optional: set a max width for each card */
+  margin: auto;
+  /* Center if grid column is bigger */
+}
+
+.menuCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Menu image */
+.menuImg {
+  width: 100%;
+  /* Full width of card */
+  height: 200px;
+  /* Fixed height for uniformity */
+  object-fit: cover;
+  /* Crop nicely */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.menuName {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.menuPrice {
+  font-size: 18px;
+  color: #ff6b35;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Add to Cart button */
+.addBtn {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff6b35;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.addBtn:hover {
+  background-color: #e85a2a;
+}
+
+.categoryBar {
+  margin-bottom: 30px;
+}
+
+.categoryBar button {
+  padding: 10px 18px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  background: #ff6b35;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.categoryBar button:hover {
+  background: #e85a2a;
+}
+
+.menuContainer {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #fff8f0, #ffe9d6);
+  text-align: center;
+}
+
+/* Title */
+.menuTitle {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Category buttons */
+.categoryBar {
+  margin-bottom: 20px;
+}
+
+.categoryBar button {
+  padding: 10px 18px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  background: #ff6b35;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.categoryBar button:hover {
+  background: #e85a2a;
+}
+
+/* Veg Non Veg buttons */
+.subCategoryBar {
+  margin-bottom: 30px;
+}
+
+.subCategoryBar button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 18px;
+  background: #2ecc71;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subCategoryBar button:hover {
+  background: #27ae60;
+}
+
+/* Menu grid */
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Menu card */
+.menuCard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menuCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.menuImg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Food name */
+.menuName {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+/* Price */
+.menuPrice {
+  font-size: 18px;
+  color: #ff6b35;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Add button */
+.addBtn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #ff6b35;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background: #e85a2a;
+}
+
+.aiGlowButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #f2994a;
+  color: white;
+  border: none;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(242, 153, 74, 0.35);
+  z-index: 1000;
+  animation: pulseGlow 3s infinite, floatBtn 4s ease-in-out infinite;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s;
+}
+
+.aiGlowButton:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 12px 30px rgba(242, 153, 74, 0.45);
+}
+
+.aiGlowButton:active {
+  transform: scale(0.95);
+}
+
+.aiIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.aiGlowButton:hover .aiIcon {
+  transform: rotate(5deg) scale(1.05);
+}
+
+/* Tooltip speech bubble */
+.aiTooltip {
+  position: fixed;
+  bottom: 43px;
+  right: 120px;
+  background: #ffffff;
+  border: 1px solid #e5e0d8;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 18px 18px 4px 18px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 1000;
+  cursor: pointer;
+  animation: tooltipFadeIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both, floatTooltip 4s ease-in-out infinite;
+  transition: transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+
+.aiTooltip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Arrow pointing to the button */
+.aiTooltip::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  bottom: 12px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #ffffff;
+}
+
+.aiTooltipText {
+  font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.2px;
+}
+
+.aiTooltipClose {
+  background: rgba(0, 0, 0, 0.04);
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  color: #f2994a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.aiTooltipClose:hover {
+  background: #f2994a;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Keyframe Animations */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 8px 24px rgba(242, 153, 74, 0.35), 0 0 0 0px rgba(242, 153, 74, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 8px 24px rgba(242, 153, 74, 0.35), 0 0 0 15px rgba(242, 153, 74, 0);
+  }
+
+  100% {
+    box-shadow: 0 8px 24px rgba(242, 153, 74, 0.35), 0 0 0 0px rgba(242, 153, 74, 0);
+  }
+}
+
+@keyframes floatBtn {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+
+@keyframes floatTooltip {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.menuDescription {
+  font-size: 13px;
+  color: #666;
+  margin: 6px 0;
+  line-height: 1.4;
+  min-height: 35px;
+}
+
+.menuImage {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  /* This keeps aspect ratio while filling the box */
+  border-radius: 8px;
+}
+
+.typeSelector {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.typeSelector button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #ff6347;
+  /* Match your orange theme */
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* State-specific styles */
+.activeType {
+  background-color: #ff6347 !important;
+  color: white;
+}
+
+.activeVeg {
+  border-color: #28a745 !important;
+  color: #28a745;
+}
+
+.activeNonVeg {
+  border-color: #dc3545 !important;
+  color: #dc3545;
+}
+
+/* The main card container */
+.menuCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  /* Set a consistent width */
+  height: 420px;
+  /* Force a consistent total height */
+  justify-content: space-between;
+  transition: transform 0.2s;
+}
+
+/* The Image Wrapper */
+.imageWrapper {
+  width: 100%;
+  height: 160px;
+  /* Fixed height for all images */
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.menuImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Prevents stretching */
+}
+
+/* The Text Section */
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Keep names to a single line */
+.cardDetails h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Force description to occupy exactly 3 lines of space */
+.description {
+  font-size: 0.85rem;
+  color: #777;
+  margin: 8px 0;
+  height: 3.6em;
+  /* Fixed height (approx 3 lines) */
+  line-height: 1.2em;
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 5px 0 12px 0;
+}
+
+/* Add to Cart Button stays at the very bottom */
+.addBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Container styling for the text elements */
+.card-content {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 16px;
+}
+
+/* Make the Item Name bold and slightly larger */
+.item-name {
+  font-size: 24px;
+  font-weight: 800;
+  color: #333333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Description styling */
+.description {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* Make the Price bold and distinct */
+.price {
+  font-size: 22px;
+  font-weight: 800;
+  /* Extra Bold */
+  color: #333333;
+  margin-bottom: 24px;
+  display: block;
+}
+
+/* Styling for the Add to Cart button */
+.add-to-cart-btn {
+  background-color: #FF6347;
+  /* Matching the orange/coral color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Food name - High Contrast Bold */
+.menuName {
+  font-size: 22px;
+  font-weight: 800;
+  /* Extra bold for visibility */
+  color: #1a1a1a;
+  /* Dark charcoal instead of light gray */
+  margin: 10px 0 5px 0;
+  display: block;
+}
+
+/* Price - Bold and Clear */
+.menuPrice {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ff6347;
+  /* Matching your orange theme */
+  margin-bottom: 15px;
+}
+
+/* Veg Indicator */
+.veg .menuName {
+  border-left: 5px solid #28a745;
+  /* Green stripe next to name */
+  padding-left: 10px;
+}
+
+/* Non-Veg Indicator */
+.non-veg .menuName {
+  border-left: 5px solid #dc3545;
+  /* Red stripe next to name */
+  padding-left: 10px;
+}
+
+/* Optional: Small Dot Icon for Veg/Non-Veg */
+.status-dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px #ccc;
+}
+
+.veg-dot {
+  background-color: #28a745;
+}
+
+.nonveg-dot {
+  background-color: #dc3545;
+}
+
+.menuName {
+  font-size: 22px;
+  font-weight: 800;
+  /* Keep it nice and thick */
+  color: #1a1a1a;
+  /* Deep dark gray for maximum readability */
+  margin-bottom: 8px;
+  display: block;
+  opacity: 1;
+  /* Ensures no transparency is applied */
+}
+
+.cardDetails h3 {
+  color: #1a1a1a !important;
+  font-weight: 800;
+}
+
+/* 1. Make Item Name Dark & Bold */
+.menuName {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a1a1a;
+  /* Pure dark for visibility */
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* 2. Fix the Description Cut-off */
+.description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 12px;
+
+  /* Remove 'height: 3.6em' if you want it to expand */
+  /* OR use this to show up to 4 lines before adding '...' */
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 60px;
+  /* Ensures space is reserved even for short text */
+}
+
+/* 3. Veg & Non-Veg Specific Styles */
+.menuCard.veg {
+  border-top: 4px solid #28a745;
+  /* Green top for Veg */
+}
+
+.menuCard.non-veg {
+  border-top: 4px solid #dc3545;
+  /* Red top for Non-Veg */
+}
+
+/* 4. Ensure Card Adjusts Height */
+.menuCard {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  /* Change 'height' to 'min-height' so it can grow if description is long */
+  min-height: 420px;
+  height: auto;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Bar Styles */
+.searchBarContainer {
+  margin: 0 auto 25px auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 16px;
+  border: 2px solid #ffba82;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.searchInput:focus {
+  border-color: #ff6b35;
+  box-shadow: 0 6px 12px rgba(255, 107, 53, 0.2);
+}
+
+/* ════════════════════════════════
+   Cart Toast Notification
+════════════════════════════════ */
+.cartToast {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1a1a;
+  color: #fff;
+  padding: 0.65rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+  z-index: 4000;
+  animation: slideDown 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  border: 1px solid rgba(255, 107, 53, 0.4);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* ════════════════════════════════
+   Customizable Pill (on card image)
+════════════════════════════════ */
+.customizablePill {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: var(--border-color, rgba(255, 255, 255, 0.92));
+  color: #ff6b35;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
+/* ════════════════════════════════
+   Floating Cart Button
+════════════════════════════════ */
+.floatingCartBtn {
+  position: fixed;
+  bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #ff6b35, #ff3300);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.45);
+  z-index: 1000;
+  transition: transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+
+.floatingCartBtn:hover {
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 12px 32px rgba(255, 107, 53, 0.6);
+}
+
+.cartCountBadge {
+  background: white;
+  color: #ff3300;
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.cartBtnLabel {
+  font-weight: 600;
+}
+
+/* ════════════════════════════════
+   Cart Drawer
+════════════════════════════════ */
+.cartOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 3000;
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.cartDrawer {
+  background: #fff;
+  border-radius: 24px 24px 0 0;
+  width: 100%;
+  max-width: 560px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  overflow: hidden;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.cartDrawerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cartDrawerTitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.cartCloseBtn {
+  background: #f5f5f5;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  transition: background 0.2s;
+}
+
+.cartCloseBtn:hover {
+  background: #e8e8e8;
+}
+
+.cartItems {
+  overflow-y: auto;
+  padding: 0.75rem 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #f0f0f0;
+}
+
+.cartItemImg {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.cartItemInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.cartItemName {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  margin: 0 0 0.2rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Customization tags inside cart */
+.cartCustomization {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.cartCustomTag {
+  background: rgba(255, 107, 53, 0.1);
+  color: #e85a2a;
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.cartItemPrice {
+  font-weight: 700;
+  color: #ff6b35;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.cartQtyControls {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.cartQtyControls button {
+  background: #f0f0f0;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  color: #333;
+}
+
+.cartQtyControls button:hover {
+  background: #e0e0e0;
+}
+
+.cartQtyControls span {
+  font-weight: 700;
+  font-size: 1rem;
+  min-width: 22px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.cartRemoveBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.05rem;
+  padding: 0.25rem;
+  opacity: 0.55;
+  transition: opacity 0.2s;
+}
+
+.cartRemoveBtn:hover {
+  opacity: 1;
+}
+
+.cartFooter {
+  padding: 1.1rem 1.5rem;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.cartTotalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.cartTotalAmt {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ff6b35;
+}
+
+.placeOrderBtn {
+  width: 100%;
+  padding: 0.85rem;
+  background: linear-gradient(135deg, #ff6b35, #ff3300);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 6px 18px rgba(255, 107, 53, 0.35);
+}
+
+.placeOrderBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(255, 107, 53, 0.5);
+}
+
+.placeOrderBtn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* ════════════════════════════════
+   Order Success Banner
+════════════════════════════════ */
+.orderSuccessBanner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f0fff4;
+  border: 1px solid #68d391;
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  margin: 0 auto 1.5rem auto;
+  max-width: 600px;
+  position: relative;
+}
+
+.successIcon {
+  font-size: 1.8rem;
+}
+
+.successTitle {
+  font-weight: 800;
+  color: #276749;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.successSub {
+  color: #48bb78;
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.dismissBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #68d391;
+  font-size: 1.1rem;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+/* ════════════════════════════════
+   Customization Modal (slide-up)
+════════════════════════════════ */
+.custOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 4500;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.custModal {
+  background: #fff;
+  border-radius: 28px 28px 0 0;
+  width: 100%;
+  max-width: 580px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  overflow: hidden;
+}
+
+.custHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.4rem 1.5rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.custTitle {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 0.2rem 0;
+}
+
+.custSubtitle {
+  color: #ff6b35;
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.custCloseBtn {
+  background: #f5f5f5;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.custCloseBtn:hover {
+  background: #e8e8e8;
+}
+
+.custBody {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.custOptionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.custOptionLabel {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.custRequired {
+  color: #ff3300;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.custChoices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.custChoice {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  background: #f7f7f7;
+  border: 2px solid #e8e8e8;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #444;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+  user-select: none;
+}
+
+.custChoice input {
+  display: none;
+  /* hide native radio/checkbox; use label styling */
+}
+
+.custChoice:hover {
+  border-color: #ff6b35;
+  color: #ff6b35;
+  background: rgba(255, 107, 53, 0.06);
+}
+
+.custChoiceActive {
+  border-color: #ff6b35 !important;
+  background: rgba(255, 107, 53, 0.1) !important;
+  color: #ff6b35 !important;
+}
+
+.custTextarea {
+  width: 100%;
+  border: 2px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: #333;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.custTextarea:focus {
+  border-color: #ff6b35;
+}
+
+.custFooter {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem 1.25rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.custCancelBtn {
+  flex: 0 0 auto;
+  padding: 0.75rem 1.4rem;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  color: #555;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.custCancelBtn:hover {
+  background: #e8e8e8;
+}
+
+.custConfirmBtn {
+  flex: 1;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #ff6b35, #ff3300);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 6px 18px rgba(255, 107, 53, 0.35);
+}
+
+.custConfirmBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(255, 107, 53, 0.5);
+}
+
+.noItems {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #999;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  font-size: 1.1rem;
+  color: #999;
+}

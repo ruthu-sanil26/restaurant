@@ -1,0 +1,29 @@
+/* Order Status Card */
+.orderStatusHome {
+  background: white;
+  max-width: 500px;
+  width: 90%;
+  margin: 50px auto 0;
+  padding: 20px 25px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.orderStatusHome:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.orderStatusHome h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #ff6b3d;
+}
+
+.status_pending { color: orange; font-weight: 600; }
+.status_confirmed { color: #3498db; font-weight: 600; }
+.status_preparing { color: #f39c12; font-weight: 600; }
+.status_ready { color: #27ae60; font-weight: 600; }
+.status_served { color: #2c3e50; font-weight: 600; }
