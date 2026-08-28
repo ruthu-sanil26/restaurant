@@ -1,10 +1,10 @@
 # AI Agent Based Restaurant Management System
 
-A full-stack MERN app where **customers scan a QR code** at the table to view the menu, chat with an AI assistant, place orders, get **realtime order status** (Socket.io), and pay by **cash or online**.
+A full-stack MERN app where **custom order food through chatbot** at the table to view the menu, chat with an AI assistant, place orders, get **realtime order status** (Socket.io), and pay by **cash or online**.
 
 ## Project Goal
 
-- **Customers** scan a QR code at the restaurant table → open the **customer view**.
+- **Customers**  → open the **customer view**.
 - They see the **menu**, chat with the **AI assistant**, **place orders**, get **live order status updates**, and then **pay by cash or online**.
 
 ## Features
